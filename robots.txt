@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://teplo-eda.ru/sitemap.xml
+Sitemap: http://teplo-eda.ru/sitemap.xml

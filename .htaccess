@@ -1,8 +1,4 @@
 DirectoryIndex index.html
 ErrorDocument 404 /index.html
 
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
 AddDefaultCharset UTF-8
