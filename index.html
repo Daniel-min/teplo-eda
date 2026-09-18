@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тепло — еда как дома</title>
+<meta name="description" content="Готовая домашняя еда в реторт-упаковке. 18 месяцев без консервантов, готовится за 3 минуты. Скоро запуск — проголосуйте за продукты.">
+<link rel="icon" href="assets/img/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo">
+      <img src="assets/img/logo.png" alt="Тепло">
+    </a>
+    <nav class="nav">
+      <a href="#about">О нас</a>
+      <a href="#products">Продукты</a>
+      <a href="#packaging">Упаковка</a>
+    </nav>
+    <a href="#vote" class="btn btn-primary btn-sm">Проголосовать</a>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about">О нас</a>
+    <a href="#products">Продукты</a>
+    <a href="#packaging">Упаковка</a>
+    <a href="#vote" class="btn btn-primary">Проголосовать</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="badge"><span class="badge-dot"></span>Скоро запуск · будьте первыми</span>
+        <h1>Еда как дома,<br>везде</h1>
+        <p class="hero-lead">Создаём готовую еду, которую хочется держать дома. Настоящие рецепты, реторт-упаковка, никаких компромиссов.</p>
+        <div class="hero-actions">
+          <a href="#vote" class="btn btn-primary">Выбрать первые продукты</a>
+          <div class="hero-stat">
+            <strong>18 мес.</strong>
+            <span>без консервантов</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-media-shape"></div>
+        <img src="assets/img/hero-bowl.jpg" alt="Тёплое блюдо с курицей и рисом">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-media">
+        <img src="assets/img/borsch-photo.jpg" alt="Домашний борщ">
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">История бренда</span>
+        <h2>Началось с Физрука — и&nbsp;желания поддержать своих</h2>
+        <p>«Физрук» — позывной друга детства нашего основателя. Когда он оказался далеко от дома, захотелось поддержать его самым простым способом — готовить домашнюю еду и отправлять её в посылках.</p>
+        <p>С этого всё и началось: с небольших партий, сделанных для своих, с простых рецептов и желания передать через еду тепло, вкус и ощущение дома. Со временем эта история выросла в бренд домашней еды — честной, понятной и сделанной с душой.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Как устроено голосование</span>
+        <h2>Три шага до ранней скидки</h2>
+        <p>Выберите продукты, расскажите о себе, оставьте контакт — и вы в первой волне запуска</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">01</span>
+          <h3>Выберите до 3 продуктов</h3>
+          <p>Пролистайте концепты ниже. Выберите те, которые хотели бы купить в первую очередь.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">02</span>
+          <h3>Ответьте на 3 вопроса</h3>
+          <p>Коротко расскажите о себе и о том, где вам важнее всего иметь вкусную готовую еду под рукой.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">03</span>
+          <h3>Получите ранний доступ</h3>
+          <p>Оставьте контакт. Мы сообщим вам первым о запуске и предложим специальную цену.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Голосование за продукты</span>
+        <h2>Что запускать первым?</h2>
+        <p>Выберите блюда, которые вы бы попробовали в первую очередь. После выбора — 3 коротких вопроса и ранний доступ к запуску</p>
+      </div>
+
+      <div class="products-grid" id="vote">
+        <!-- cards injected by JS from PRODUCTS data, see script.js -->
+      </div>
+
+      <div class="vote-cta">
+        <p><span id="voteCount">0</span> из 3 выбрано</p>
+        <a href="#signup" class="btn btn-primary">Продолжить</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGING -->
+  <section class="packaging" id="packaging">
+    <div class="container">
+      <div class="section-head center light">
+        <span class="eyebrow">Реторт-упаковка</span>
+        <h2>Почему именно такая упаковка</h2>
+        <p>Реторт — это та же консерва, только гибкая. Стерилизация под давлением убивает бактерии без химических консервантов.</p>
+      </div>
+      <div class="packaging-grid">
+        <div class="pack-card">
+          <div class="pack-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6c-7 8-12 14-12 21a12 12 0 0 0 24 0c0-7-5-13-12-21Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M19 30c0 3 2.2 5 5 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>18 месяцев без холодильника</h3>
+          <p>Храните при комнатной температуре. Идеально для дома, дачи, машины, рюкзака.</p>
+        </div>
+        <div class="pack-card">
+          <div class="pack-icon">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="17" stroke="currentColor" stroke-width="2.4"/><path d="M15 15l18 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Никаких консервантов</h3>
+          <p>Состав — только еда. Мясо, овощи, специи. Стерилизация высоким давлением заменяет всю химию.</p>
+        </div>
+        <div class="pack-card">
+          <div class="pack-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M26 4 10 27h11l-3 17 18-25H25l1-15Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Горячо за 3 минуты</h3>
+          <p>В кипятке, в микроволновке или прямо на горелке — вкусный горячий обед без кастрюль.</p>
+        </div>
+        <div class="pack-card">
+          <div class="pack-icon">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 24a16 16 0 0 1 28-10.5M40 24a16 16 0 0 1-28 10.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M36 8v6h-6M12 40v-6h6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Легче банки в 8 раз</h3>
+          <p>Гибкий пакет занимает минимум места и весит 30 г против 250 г жестяной банки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="signup" id="signup">
+    <div class="container signup-inner">
+      <div class="signup-copy">
+        <span class="eyebrow">Ранний доступ</span>
+        <h2>Узнайте о запуске первым</h2>
+        <p>Без спама — одно письмо, когда откроем продажи. Участникам ранние цены.</p>
+      </div>
+      <form class="signup-form" id="signupForm">
+        <label class="field-label">Как с вами связаться?</label>
+        <div class="channel-select" id="channelSelect">
+          <button type="button" class="channel-btn active" data-channel="Telegram">Telegram</button>
+          <button type="button" class="channel-btn" data-channel="MAX">MAX</button>
+          <button type="button" class="channel-btn" data-channel="СМС">СМС</button>
+        </div>
+        <div class="phone-row">
+          <span class="phone-prefix">+7</span>
+          <input type="tel" inputmode="numeric" placeholder="926 000-00-00" required aria-label="Номер телефона">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Подписаться</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="Тепло">
+    </div>
+    <div class="footer-col">
+      <h4>Информация</h4>
+      <p>ИП Цветков Павел Александрович<br>ИНН 504009816002</p>
+    </div>
+    <div class="footer-col">
+      <h4>Телефон</h4>
+      <p><a href="tel:+79265804228">+7 926 580-42-28</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <p><a href="#about">О нас</a><br><a href="#products">Продукты</a><br><a href="#packaging">Упаковка</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
