@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://teplo-eda.ru/sitemap.xml
